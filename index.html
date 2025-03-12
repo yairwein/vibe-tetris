@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Tetris</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r156/three.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="score-container">
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+            <div id="lines">Lines: 0</div>
+        </div>
+        <div id="canvas-container"></div>
+        <div id="controls">
+            <p>Controls:</p>
+            <p>← → : Move left/right</p>
+            <p>↑ : Rotate</p>
+            <p>↓ : Soft drop</p>
+            <p>Space : Hard drop</p>
+            <p>P : Pause</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="tetromino.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 

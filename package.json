@@ -1,0 +1,20 @@
+{
+  "name": "threejs-tetris",
+  "version": "1.0.0",
+  "description": "A 3D Tetris game using Three.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "browserify src/main.js -o public/bundle.js -t [ babelify --presets [ @babel/preset-env ] ]"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "three": "^0.156.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0"
+  }
+} 
